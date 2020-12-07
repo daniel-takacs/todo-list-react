@@ -15,8 +15,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
+
+  "homepage": "https://daniel-takacs.github.io/todo-list-react",
+
   "eslintConfig": {
     "extends": [
       "react-app",
