@@ -1,12 +1,13 @@
-
+import Form from './components/Form'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Hello React</h1>
+      <h1>Todo List</h1>
       </header>
+      <Form />
     </div>
   );
 }
