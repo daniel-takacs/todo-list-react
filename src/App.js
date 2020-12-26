@@ -1,27 +1,20 @@
 import Form from './components/Form'
 import './App.css';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class App extends Component {
+function App () {
 
-  state = {
-    title: "text"
-  }
+  const [title, setTitle] = useState("text")
 
-  handleTitleUpdate = (newValue) =>{
-    this.setState({title: newValue})
-  }
-
-  render(){
     return (
       <div className="App">
         <header className="App-header">
-        <h1>{this.state.title}</h1>
+        <h1>{title}</h1>
         </header>
-        <Form handleTitleUpdate={this.handleTitleUpdate}/>
+        <Form handleTitleUpdate={setTitle}/>
       </div>
     );
-  }
+  
 }
 
 export default App;
