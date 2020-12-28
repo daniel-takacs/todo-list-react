@@ -4,13 +4,49 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   min-height: 100vh;
+  background-color: #2A2E45;
+  color:white
 }
 
 header,form {
-  min-height: 20vh;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.form-style {
+  padding: 50px;
+}
+.input-style {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.add-button {
+  padding: 10px 25px;
+  background-color: #88BB92;
+  border: none;
+}
+.add-button:hover {
+  
+  background-color: #88BB92;
+  border-radius: 10px;
+}
+.todo-list{
+  width: 400px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  border: 1px solid black;
+  
+
+}
+.todo-list li {
+  list-style: none;
+  padding: 10px;
 }
