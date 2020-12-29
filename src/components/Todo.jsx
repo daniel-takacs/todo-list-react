@@ -9,9 +9,15 @@ export default function Todo({ text, setTodos, todo, todos }) {
 
     return (
         <div className="todo-list">
-            <li>{text}</li>
-            <button>+</button>
-            <button onClick={deleteHandler}>Trush</button>
+            <li className="todo-item">{text}</li>
+            
+            <button><i class="fas fa-check-circle"></i>
+
+</button>
+            <button onClick={deleteHandler}><i class="fas fa-minus-circle"></i>
+
+</button>
+           
         </div>
     )
 }

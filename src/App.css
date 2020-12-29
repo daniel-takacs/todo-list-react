@@ -2,40 +2,50 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 body {
   min-height: 100vh;
   background-color: #2A2E45;
-  color:white
+  color:white;
+ 
 }
-
-header,form {
-  
+button {
+  cursor: pointer;
+}
+.App-header,form {
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+h1 {
+  font-size: 3rem;
+}
 .form-style {
-  padding: 50px;
+  padding: 2rem;
 }
 .input-style {
-  padding: 10px;
+  padding: 0.6rem;
+  border: none;
+  outline: none;
+  width: 20rem;
+}
+.add-button {
+  padding: 0.6rem 1.5rem;
+  background-color: #88BB92;
   border: none;
   outline: none;
 }
-.add-button {
-  padding: 10px 25px;
-  background-color: #88BB92;
-  border: none;
-}
 .add-button:hover {
   
-  background-color: #88BB92;
-  border-radius: 10px;
+  background-color: #99d1a4;
+  outline: none;
+ 
 }
 .todo-list{
-  width: 400px;
+  width: 24.8rem;
   font-size: 15px;
   display: flex;
   justify-content: center;
@@ -43,10 +53,40 @@ header,form {
   color: black;
   margin: 0 auto;
   border: 1px solid black;
-  
+  margin-top: .2rem;
 
 }
 .todo-list li {
-  list-style: none;
+  list-style:none;
   padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.todo-item {
+  flex:1;
+}
+
+.todo-list button {
+  width: 2rem;
+  color: green;
+  border: none;
+  background-color:white;
+}
+.todo-list button:last-child {
+  width: 2rem;
+  color: red;
+}
+.todo-list button:hover {
+  padding: .2rem;
+}
+
+@media only screen and (max-width: 540px) {
+  * {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  * {
+    font-size: 12px;
+  }
 }
