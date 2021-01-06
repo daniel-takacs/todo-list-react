@@ -44,6 +44,9 @@ h1 {
   outline: none;
  
 }
+.completed {
+  text-decoration: line-through;
+}
 .todo-list{
   width: 24.8rem;
   font-size: 15px;

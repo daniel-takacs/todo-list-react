@@ -5,7 +5,12 @@ export default function TodoList({todos, setTodos}) {
     return (
         <div>
             <ul>{todos.map(todo => (
-                <Todo todo={todo} todos={todos} key={todo.key} text={todo.text} setTodos={setTodos}/>
+                <Todo 
+                todo={todo} 
+                todos={todos} 
+                key={todo.key} 
+                text={todo.text} 
+                setTodos={setTodos}/>
             ))}</ul>
         </div>
     )

@@ -9,6 +9,7 @@ export default function Form ({ inputText, setInputText, todos, setTodos }) {
     const submitHandler = (e) => {
         e.preventDefault();
         setTodos([...todos, {key: Math.random(), text: inputText}]);
+        setInputText("");
     }
     return(
         <form className="form-style">
